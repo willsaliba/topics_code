@@ -31,7 +31,7 @@ int main() {
     printf("Request Generated\n\n");
 
     //command to execute python code with args
-    //!!! change to get custom filepath
+    //!!! change to get custom filepath 
     string cmd = "python3 /Users/willsaliba/Documents/Topics/TopicsCode/RiffusionModel/plugin_requests.py \"" 
         + prompt + "\" \"" + action + "\" " + randomness + " \"" + filePath + "\"";
 
