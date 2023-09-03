@@ -1,7 +1,5 @@
 import sys
 
-#perform model setup beforehand?
-
 #checking for correct number of arguments
 if len(sys.argv) != 5:
     print("Incorrect number of arguments provided.")

@@ -31,14 +31,13 @@ int main() {
     printf("Request Generated\n\n");
 
     //command to execute python code with args
-    string cmd = "python3 /Users/willsaliba/Documents/Topics/TopicsCode/RiffusionModel/plugin_requests.py \"" 
-        + prompt + "\" \"" + action + "\" " + randomness + " \"" + filePath + "\"";
+    string cmd = "python3 theModel.py \"" + prompt + "\" \"" + action + "\" " + randomness + " \"" + filePath + "\"";
 
     //perform command & store result
     string newTrackPath = get_result_from_model(cmd.c_str());;
 
     //print response
-    cout << "Response: " << newTrackPath;
+    cout << "Response Recieved: " << newTrackPath << "\n\n";
 
     return 0;
 }
