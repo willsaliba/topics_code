@@ -1,6 +1,0 @@
-
-# Convert a Spectrogram to Audio
-python3 -m riffusion.cli image-to-audio --image spectrogram_image.png --audio clip.wav
-
-# Convert Audio to Spectrogram
-python3 -m riffusion.cli audio-to-image -a pianoonly_musicgen.mp3 -i output_spectrogram.png
