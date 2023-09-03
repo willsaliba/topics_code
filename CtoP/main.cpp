@@ -16,7 +16,7 @@ string get_result_from_model(const char* cmd) {
     string result;
     array<char, 128> buffer;
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-        result += buffer.data();  // Append buffer contents to result
+        result += buffer.data();
     }
     
     return result;
@@ -31,6 +31,7 @@ int main() {
     printf("Request Generated\n\n");
 
     //command to execute python code with args
+    //!!! change to get custom filepath
     string cmd = "python3 /Users/willsaliba/Documents/Topics/TopicsCode/RiffusionModel/plugin_requests.py \"" 
         + prompt + "\" \"" + action + "\" " + randomness + " \"" + filePath + "\"";
 
